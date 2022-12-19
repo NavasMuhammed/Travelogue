@@ -1,0 +1,25 @@
+.home-layout {
+    display: grid;
+    grid-template-areas:
+        'leftbar topbar topbar topbar topbar topbar topbar'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+    ;
+
+    .top-bar-grid {
+        grid-area: topbar;
+    }
+
+    .left-menu-grid {
+        grid-area: leftbar;
+    }
+
+    .children {
+        grid-area: children;
+        background-color: rgb(20,21,39);
+    }
+}

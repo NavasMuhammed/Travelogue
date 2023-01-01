@@ -1,5 +1,6 @@
 import React from 'react'
 import { LeftMenuItems } from './data'
+import { DashboardIcons } from '../icons/index'
 import "./leftMenu.scss"
 function LeftMenu() {
   return (
@@ -14,7 +15,7 @@ function LeftMenu() {
         {LeftMenuItems.map((item, index) => {
           return (
             <div key={index} className="left-menu-items">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAhUlEQVRIid2UUQrAIAxDy07n/Y+gB3n7cw7UNR2IW36TEkxszX4DIAGFPjKQItrWIA8G6mBE2xoAMHjdjVO0hzfCKLY1KGZXHC1a/gaxgzQpeviL3AYKlnbgzpXgorlzneiq/tWzlb7WdRDKVYGSqxLRM9Hh9uxghYFywELHTlk0/dh9Fic8pXankphXVAAAAABJRU5ErkJggg==" />
+              <DashboardIcons icon={item.name} selected={false}></DashboardIcons>
               <span>{item.title}</span>
             </div>
           )

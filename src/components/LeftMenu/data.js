@@ -5,11 +5,11 @@ export const LeftMenuItems = [
     },
     {
         title: "My Tickets",
-        name: "myTickets",
+        name: "ticket",
     },
     {
         title: "Favourite",
-        name: "favourite",
+        name: "favorite",
     },
     {
         title: "Message",

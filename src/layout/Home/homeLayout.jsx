@@ -3,7 +3,7 @@ import LeftMenu from '../../components/LeftMenu/leftMenu'
 import TopBar from '../../components/TopBar/topBar'
 import "./homeLayout.scss"
 
-function HomeLayout() {
+function HomeLayout({ children }) {
     return (
         <div className="home-layout">
             <div className="left-menu-grid">
@@ -12,7 +12,7 @@ function HomeLayout() {
             <div className="top-bar-grid">
                 <TopBar></TopBar>
             </div>
-            <div className="children">hi</div>
+            <div className="children">{children}</div>
         </div>
     )
 }

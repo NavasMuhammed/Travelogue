@@ -2,8 +2,10 @@ import React from 'react'
 import { LeftMenuItems } from './data'
 import { DashboardIcons } from '../icons/index'
 import "./leftMenu.scss"
-import { Route, Routes, Link } from 'react-router-dom'
+import { Route, Routes, Link, useLocation } from 'react-router-dom'
 function LeftMenu() {
+  const location = useLocation();
+  const currentRoute = location.pathname;
   return (
     <>
       <div className="left-menu-container">
@@ -18,8 +20,8 @@ function LeftMenu() {
             return (
               <>
                 <Link to={item.name}>
-                  <div key={index} className="left-menu-items">
-                    <DashboardIcons icon={item.name} selected={false}></DashboardIcons>
+                  <div key={index} className={currentRoute == "/" + item.name ? "left-menu-items-selected" : "left-menu-items"}>
+                    <DashboardIcons icon={item.name} selected={currentRoute == "/" + item.name}></DashboardIcons>
                     <span>{item.title}</span>
                   </div>
                 </Link>

@@ -2,12 +2,13 @@
     contain: content;
     margin-top: 20px;
     margin-left: 20px;
-    margin-right: -180px;
+    margin-right: -140px;
     height: 95vh;
     width: 230px;
     border-radius: 20px;
     background-color: rgba(22, 25, 42);
     box-shadow: rgb(20, 22, 39, 0.904) 0px 5px 15px;
+   
 
     .left-menu-bg {
         position: absolute;
@@ -96,6 +97,7 @@
             font-size: 13px;
             color: #ffffff;
             font-family: sans-serif;
+            
         }
     }
 }

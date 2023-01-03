@@ -8,7 +8,7 @@
 
     .search-container {
         display: flex;
-        width: 50%;
+        width: 60%;
         gap: 20px;
         padding-left: 40px;
 
@@ -42,6 +42,9 @@
     .profile-container {
         display: flex;
         padding-left: 60px;
+        display: flex;
+        gap: 40px;
+        align-items: center;
         .notification-container {
             width: 52.5px;
             height: 52.5px;
@@ -57,13 +60,33 @@
                 border-radius: 50%;
                 background: #FC6746;
                 position: fixed;
-                top: 62.5px;
-                left: 1009px;
+                top: 68px;
+                left: 1138px;
             }
 
             svg {
                 width: 18.5px;
             }
+        }
+        .user{
+            display: flex;
+            flex-direction: row;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            align-items: center;
+            gap: 25px;
+            
+            img{
+                width: 60px;
+                height: 60px;
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+        .arrow{
+            padding-left: 120px;
         }
     }
 }

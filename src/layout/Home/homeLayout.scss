@@ -12,7 +12,7 @@
 
     .top-bar-grid {
         grid-area: topbar;
-        margin-left: 20px;
+        margin-left: 70px;
     }
     
     .left-menu-grid {
@@ -20,7 +20,7 @@
     }
     
     .children {
-        margin-left: 30px;
+        margin-left: 100px;
         grid-area: children;
         background-color: rgb(20,21,39);
     }

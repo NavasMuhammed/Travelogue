@@ -12,13 +12,15 @@
 
     .top-bar-grid {
         grid-area: topbar;
+        margin-left: 20px;
     }
-
+    
     .left-menu-grid {
         grid-area: leftbar;
     }
-
+    
     .children {
+        margin-left: 30px;
         grid-area: children;
         background-color: rgb(20,21,39);
     }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Notifications from '../widgets/notification'
 import "./topBar.scss"
 function TopBar() {
   return (
@@ -7,7 +8,9 @@ function TopBar() {
         <input className="search-input" placeholder="Search for your favorite destination" type="text" />
         <button className="btn-search">Search</button>
       </div>
-      <div className="profile-container"></div>
+      <div className="profile-container">
+        <Notifications badge={true} />
+      </div>
     </div>
   )
 }

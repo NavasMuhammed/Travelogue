@@ -1,27 +1,23 @@
 .home-layout {
-    display: grid;
-    grid-template-areas:
-        'leftbar topbar topbar topbar topbar topbar topbar'
-        'leftbar children children children children children children'
-        'leftbar children children children children children children'
-        'leftbar children children children children children children'
-        'leftbar children children children children children children'
-        'leftbar children children children children children children'
-        'leftbar children children children children children children'
-    ;
+    display: flex;
+    flex-direction: row;
 
-    .top-bar-grid {
-        grid-area: topbar;
-        margin-left: 70px;
+    .left-flex {
+        display: block;
     }
-    
-    .left-menu-grid {
-        grid-area: leftbar;
-    }
-    
-    .children {
-        margin-left: 100px;
-        grid-area: children;
-        background-color: rgb(20,21,39);
+
+    .right-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+
+        .top-bar {
+            width: 100%;
+            height: 25%;
+        }
+        .children-container{
+            padding-left: 20px;
+        }
     }
 }

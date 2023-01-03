@@ -6,13 +6,17 @@ import "./homeLayout.scss"
 function HomeLayout({ children }) {
     return (
         <div className="home-layout">
-            <div className="left-menu-grid">
+            <div className="left-flex">
                 <LeftMenu></LeftMenu>
             </div>
-            <div className="top-bar-grid">
-                <TopBar></TopBar>
+            <div className="right-flex">
+                <div className="top-bar">
+                    <TopBar></TopBar>
+                </div>
+                <div className="children-container">
+                    <div className="children">{children}</div>
+                </div>
             </div>
-            <div className="children">{children}</div>
         </div>
     )
 }

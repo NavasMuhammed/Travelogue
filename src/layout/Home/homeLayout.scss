@@ -18,8 +18,19 @@
         grid-area: leftbar;
     }
 
+<<<<<<< HEAD
     .children {
         grid-area: children;
         background-color: rgb(20,21,39);
+=======
+        .top-bar {
+            width: 100%;
+            height: 25%;
+        }
+
+        .children-container {
+            padding-left: 20px;
+        }
+>>>>>>> dev
     }
 }

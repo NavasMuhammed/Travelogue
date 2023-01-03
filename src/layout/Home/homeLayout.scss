@@ -1,23 +1,25 @@
 .home-layout {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas:
+        'leftbar topbar topbar topbar topbar topbar topbar'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+        'leftbar children children children children children children'
+    ;
 
-    .left-flex {
-        display: block;
+    .top-bar-grid {
+        grid-area: topbar;
     }
 
-    .right-flex {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+    .left-menu-grid {
+        grid-area: leftbar;
+    }
 
-        .top-bar {
-            width: 100%;
-            height: 25%;
-        }
-        .children-container{
-            padding-left: 20px;
-        }
+    .children {
+        grid-area: children;
+        background-color: rgb(20,21,39);
     }
 }

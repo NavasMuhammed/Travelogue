@@ -14,6 +14,8 @@ function HomePage() {
       <Routes>
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="/dashboard/sights" element={<MainCard />}></Route>
+          <Route path="/dashboard/sights" element={<>h</>}></Route>
+          <Route path="/dashboard/sights" element={<>h</>}></Route>
         </Route>
         <Route path="/ticket" element={<Tickets></Tickets>}></Route>
         <Route path="/favorite" element={<Favorite></Favorite>}></Route>

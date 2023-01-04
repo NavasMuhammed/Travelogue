@@ -2,6 +2,7 @@ import React from 'react'
 import { MainCard } from '../components/widgets/cards/mainCard'
 import "./dashboard.scss"
 import { cardData } from './data'
+import { Route, Routes, Link } from 'react-router-dom'
 function Dashboard() {
     return (
         <div className="dashboard-container">
@@ -11,7 +12,9 @@ function Dashboard() {
                 <div className="vertical-menu">
                     {["Europ", "Sights", "Africa"].map((item, index) => {
                         return (
+                            <Link to={"/dashboard/"+item.toLowerCase()}>
                             <div key={index} className="vm-items">{item}</div>
+                            </Link>
                         )
                     })}
                 </div>

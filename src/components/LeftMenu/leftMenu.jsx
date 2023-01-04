@@ -21,7 +21,8 @@ function LeftMenu() {
               <>
                 <Link to={item.name}>
                   <div key={index} className={currentRoute == "/" + item.name ? "left-menu-items-selected" : "left-menu-items"}>
-                    <DashboardIcons icon={item.name} selected={currentRoute == "/" + item.name}></DashboardIcons>
+                    <div className="icon-box"><DashboardIcons icon={item.name} selected={currentRoute == "/" + item.name}></DashboardIcons>
+                    </div>
                     <span>{item.title}</span>
                   </div>
                 </Link>

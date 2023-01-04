@@ -7,7 +7,7 @@
     border-radius: 20px;
     background-color: rgba(22, 25, 42);
     box-shadow: rgb(20, 22, 39, 0.904) 0px 5px 15px;
-   
+
 
     .left-menu-bg {
         position: absolute;
@@ -66,9 +66,18 @@
         padding-left: 10px;
         gap: 25px;
         z-index: 9;
-
+        .icon-box{
+            width: 24px;
+            display: flex;
+            align-items: center;
+        }
         .left-menu-items {
-            // width: 80%;
+            .icon-box{
+                width: 24px;
+                display: flex;
+                align-items: center;
+            }
+            width: 100%;
             // height:35px;
             padding: 8px 10px;
             display: flex;
@@ -79,7 +88,8 @@
             top: 50px;
             font-size: 13px;
             color: rgb(164, 164, 199);
-            font-family: sans-serif;
+            font-family: 'Poppins';
+            ;
 
         }
 
@@ -95,8 +105,8 @@
             top: 50px;
             font-size: 13px;
             color: #ffffff;
-            font-family: sans-serif;
-            
+            font-family: 'Poppins';
+
         }
     }
 }

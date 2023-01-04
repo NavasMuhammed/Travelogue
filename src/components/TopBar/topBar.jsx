@@ -11,7 +11,7 @@ function TopBar() {
         <button className="btn-search">Search</button>
       </div>
       <div className="profile-container">
-        <Notifications badge={true} />
+        <Notifications badge={false} />
         <div className="user">
           <img src={user} alt="" />
           <span>Beeku</span>

@@ -37,13 +37,25 @@
                 color: #646577;
                 font-size: small;
                 font-family: 'Poppins';
+                font-weight: bold;
+            }
+            .vm-items-selected {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(270deg);
+                transform-origin: left;
+                width: fit-content;
+                color: #FC6746;
+                font-size: medium;
+                font-family: 'Poppins';
                 font-weight: bolder;
             }
         }
         .card-box{
             width: 99%;
             display: flex;
-            
+
         }
     }
 }

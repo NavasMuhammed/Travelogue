@@ -2,6 +2,21 @@ import React from 'react'
 
 function DashboardIcons({ icon, selected }) {
     switch (icon) {
+        case "location":
+            return (
+                <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.375 0C1.95625 0 0 1.95625 0 4.375C0 7.65625 4.375 12.5 4.375 12.5C4.375 12.5 8.75 7.65625 8.75 4.375C8.75 1.95625 6.79375 0 4.375 0ZM4.375 5.9375C3.9606 5.9375 3.56317 5.77288 3.27015 5.47985C2.97712 5.18683 2.8125 4.7894 2.8125 4.375C2.8125 3.9606 2.97712 3.56317 3.27015 3.27015C3.56317 2.97712 3.9606 2.8125 4.375 2.8125C4.7894 2.8125 5.18683 2.97712 5.47985 3.27015C5.77288 3.56317 5.9375 3.9606 5.9375 4.375C5.9375 4.7894 5.77288 5.18683 5.47985 5.47985C5.18683 5.77288 4.7894 5.9375 4.375 5.9375Z" fill="#FC6746" />
+                </svg>
+
+            );
+        case "bookMark":
+            return (
+                <svg width="35" height="35" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 41C32.046 41 41 32.046 41 21C41 9.954 32.046 1 21 1C9.954 1 1 9.954 1 21C1 32.046 9.954 41 21 41Z" fill="#FC6746" stroke="#FC6746" strokeWidth="0.9375" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M14.9999 29V17C14.9999 15.9391 15.4213 14.9217 16.1715 14.1716C16.9216 13.4214 17.939 13 18.9999 13H22.9999C24.0607 13 25.0782 13.4214 25.8283 14.1716C26.5785 14.9217 26.9999 15.9391 26.9999 17V29L23.2199 26.48C22.5626 26.0414 21.7901 25.8074 20.9999 25.8074C20.2097 25.8074 19.4372 26.0414 18.7799 26.48L14.9999 29Z" fill="#FFFDFC" stroke="#FC6746" strokeWidth="0.9375" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+
+            )
         case "downArrow":
             return (
                 <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">

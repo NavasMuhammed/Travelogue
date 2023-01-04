@@ -6,6 +6,7 @@ import { Route, Routes, Link, useLocation } from 'react-router-dom'
 function LeftMenu() {
   const location = useLocation();
   const currentRoute = location.pathname;
+  console.log(currentRoute.split("/")[1])
   return (
     <>
       <div className="left-menu-container">
@@ -20,8 +21,9 @@ function LeftMenu() {
             return (
               <>
                 <Link to={item.name}>
-                  <div key={index} className={currentRoute == "/" + item.name ? "left-menu-items-selected" : "left-menu-items"}>
-                    <DashboardIcons icon={item.name} selected={currentRoute == "/" + item.name}></DashboardIcons>
+                  <div key={index} className={currentRoute.split("/")[1] ==  item.name ? "left-menu-items-selected" : "left-menu-items"}>
+                    <div className="icon-box"><DashboardIcons icon={item.name} selected={currentRoute.split("/")[1] ==  item.name}></DashboardIcons>
+                    </div>
                     <span>{item.title}</span>
                   </div>
                 </Link>

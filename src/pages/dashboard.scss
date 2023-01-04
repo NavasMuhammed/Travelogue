@@ -1,0 +1,49 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .mainTitle {
+        font-size: x-large;
+        font-weight: bolder;
+        font-family: 'Poppins';
+    }
+
+    .welcome-text {
+        color: #646577;
+        font-size: medium;
+        font-family: 'Poppins';
+        font-weight: 600;
+
+    }
+
+    .card-container {
+        margin-top: 40px;
+        display: flex;
+        .vertical-menu {
+            width: 1%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 15px;
+            gap: 55px;
+            justify-content: flex-end;
+            .vm-items {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: rotate(270deg);
+                transform-origin: left;
+                width: fit-content;
+                color: #646577;
+                font-size: small;
+                font-family: 'Poppins';
+                font-weight: bolder;
+            }
+        }
+        .card-box{
+            width: 99%;
+            display: flex;
+            
+        }
+    }
+}

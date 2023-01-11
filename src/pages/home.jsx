@@ -13,9 +13,22 @@ function HomePage() {
     <HomeLayout>
       <Routes>
         <Route path="/dashboard" element={<Dashboard />}>
-          <Route path="sights" element={<MainCard></MainCard>}></Route>
-          <Route path="europ" element={<></>}></Route>
-          <Route path="africa" element={<></>}></Route>
+          <Route path="sights" element={<MainCard></MainCard>}>
+            <Route path="mostpopular" element={<></>}></Route>
+            <Route path="specialoffers" element={<></>}></Route>
+            <Route path="nearme" element={<></>}></Route>
+          </Route>
+          <Route path="europ" element={<>europ</>}>
+            <Route path="mostpopular" element={<></>}></Route>
+            <Route path="specialoffers" element={<></>}></Route>
+            <Route path="nearme" element={<></>}></Route>
+          </Route>
+          <Route path="africa" element={<>africa</>}>
+            <Route path="mostpopular" element={<></>}></Route>
+            <Route path="specialoffers" element={<></>}></Route>
+            <Route path="nearme" element={<></>}></Route>
+          </Route>
+
         </Route>
         <Route path="/ticket" element={<Tickets></Tickets>}></Route>
         <Route path="/favorite" element={<Favorite></Favorite>}></Route>

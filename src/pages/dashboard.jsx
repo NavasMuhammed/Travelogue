@@ -4,8 +4,8 @@ import "./dashboard.scss"
 import { cardData } from './data'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 function Dashboard() {
-    const currentRoute = useLocation().pathname.split("/")[2];
-    console.log(currentRoute);
+    const currentRoute = useLocation().pathname.split("/");
+    console.log(currentRoute[3]);
     return (
         <div className="dashboard-container">
             <span className="mainTitle">Hello Alison Burger !</span>
@@ -14,8 +14,8 @@ function Dashboard() {
                 <div className="vertical-menu">
                     {["Europ", "Sights", "Africa"].map((item, index) => {
                         return (
-                            <Link to={"/dashboard/" + item.toLowerCase()}>
-                                <div key={index} className={currentRoute == item.toLowerCase() ? "vm-items-selected" : "vm-items"}>{item}</div>
+                            <Link to={item.toLowerCase()}>
+                                <div key={index} className={currentRoute[2] == item.toLowerCase() ? "vm-items-selected" : "vm-items"}>{item}</div>
                             </Link>
                         )
                     })}
@@ -23,6 +23,18 @@ function Dashboard() {
                 <div className="card-box">
                     <Outlet />
                 </div>
+            </div>
+            <div className="bottom-menu-container">
+                {["Most Popular", "Special Offers", "Near Me"].map((item, index) => {
+                    return (
+                        <Link to={currentRoute[2] + "/" + item.split(" ").join("").toLowerCase()}>
+                            <div key={index} className={currentRoute[3] == item.split(" ").join("").toLowerCase() ? "menu-item-selected" : "menu-items"}>
+                                {console.log(currentRoute[3] == item.split(" ")[2])}
+                                {item}
+                            </div>
+                        </Link>
+                    )
+                })}
             </div>
         </div >
     )

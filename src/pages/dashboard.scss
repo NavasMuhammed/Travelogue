@@ -59,4 +59,18 @@
 
         }
     }
+    .bottom-menu-container{
+        padding: 20px 0px;
+        display: flex;
+        gap: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #646577;
+        .menu-items{
+            color: #646577;
+        }
+        .menu-item-selected{
+            color: #FC6746;
+        }
+    }
 }

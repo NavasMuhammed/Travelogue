@@ -30,6 +30,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  ::-webkit-scrollbar {
+    width: 12px; }
 }
 
 h1 {

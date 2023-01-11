@@ -20,6 +20,7 @@
     .card-container {
         margin-top: 10px;
         display: flex;
+
         .vertical-menu {
             width: 1%;
             display: flex;
@@ -28,6 +29,7 @@
             margin-top: 60px;
             gap: 55px;
             justify-content: flex-end;
+
             .vm-items {
                 display: flex;
                 align-items: center;
@@ -40,6 +42,7 @@
                 font-family: 'Poppins';
                 font-weight: bold;
             }
+
             .vm-items-selected {
                 display: flex;
                 align-items: center;
@@ -53,24 +56,41 @@
                 font-weight: bolder;
             }
         }
-        .card-box{
+
+        .card-box {
             width: 99%;
             display: flex;
 
         }
     }
-    .bottom-menu-container{
-        padding: 20px 0px;
+
+    .bottom-menu-container {
         display: flex;
-        gap: 40px;
-        font-weight: 500;
-        font-size: 20px;
-        color: #646577;
-        .menu-items{
+        flex-direction: column;
+        .bottom-menu-wrapper {
+            padding: 20px 0px;
+            display: flex;
+            gap: 40px;
+            font-weight: 500;
+            font-size: 20px;
             color: #646577;
+
+            .menu-items {
+                color: #646577;
+                font-size: medium;
+            }
+
+            .menu-item-selected {
+                font-weight: 500;
+                color: #FC6746;
+            }
         }
-        .menu-item-selected{
-            color: #FC6746;
+        .bottom-menu-scroll{
+            width: 80%;
+            height: 150px;
+            display: flex;
+            flex-direction: row;
+            // background-color: #fff;
         }
     }
 }

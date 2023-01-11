@@ -18,13 +18,14 @@
     }
 
     .card-container {
-        margin-top: 40px;
+        margin-top: 10px;
         display: flex;
         .vertical-menu {
             width: 1%;
             display: flex;
             flex-direction: column;
             padding-bottom: 15px;
+            margin-top: 60px;
             gap: 55px;
             justify-content: flex-end;
             .vm-items {
@@ -56,6 +57,20 @@
             width: 99%;
             display: flex;
 
+        }
+    }
+    .bottom-menu-container{
+        padding: 20px 0px;
+        display: flex;
+        gap: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #646577;
+        .menu-items{
+            color: #646577;
+        }
+        .menu-item-selected{
+            color: #FC6746;
         }
     }
 }

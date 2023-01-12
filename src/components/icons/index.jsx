@@ -2,6 +2,31 @@ import React from 'react'
 
 function DashboardIcons({ icon, selected }) {
     switch (icon) {
+        case "sent":
+            return (
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="11" fill="#646577" fill-opacity="0.38" />
+                    <path d="M6.48267 9.85602L8.17083 12.1856L12.7783 9.8916L9.16387 13.5559L10.852 15.8854L15.793 7.70691L6.48267 9.85602Z" fill="white" />
+                </svg>
+
+            );
+        case "map":
+            return (
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="11" fill="#646577" fill-opacity="0.38" />
+                    <path d="M12.5 16.25L8.75 14.9375L5.84375 16.0625C5.63542 16.1458 5.44271 16.1223 5.26562 15.9919C5.08854 15.8619 5 15.6875 5 15.4688V6.71875C5 6.58333 5.03917 6.46354 5.1175 6.35938C5.19542 6.25521 5.30208 6.17708 5.4375 6.125L8.75 5L12.5 6.3125L15.4062 5.1875C15.6146 5.10417 15.8073 5.1275 15.9844 5.2575C16.1615 5.38792 16.25 5.5625 16.25 5.78125V14.5312C16.25 14.6667 16.2108 14.7865 16.1325 14.8906C16.0546 14.9948 15.9479 15.0729 15.8125 15.125L12.5 16.25ZM11.875 14.7188V7.40625L9.375 6.53125V13.8438L11.875 14.7188ZM13.125 14.7188L15 14.0938V6.6875L13.125 7.40625V14.7188ZM6.25 14.5625L8.125 13.8438V6.53125L6.25 7.15625V14.5625ZM13.125 7.40625V14.7188V7.40625ZM8.125 6.53125V13.8438V6.53125Z" fill="white" />
+                </svg>
+
+            );
+        case "leaf":
+            return (
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="11" fill="#646577" fill-opacity="0.38" />
+                    <path d="M9.24491 15.7504C9.24491 15.7504 12.4898 16 14.2371 14.0031C15.9844 12.0062 15.9844 6.0156 15.9844 6.0156C15.9844 6.0156 9.99374 5.76599 7.99686 7.26365C5.99998 8.76131 6.4992 13.0047 6.4992 13.0047" stroke="white" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6.00006 16C6.00006 16 8.7907 13.891 10.493 12.0062C12.1954 10.1212 12.9891 8.26208 12.9891 8.26208M10.493 12.0062L10.2434 8.7613M10.493 12.0062L12.9891 11.7566" stroke="white" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+
+            );
         case "location":
             return (
                 <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">

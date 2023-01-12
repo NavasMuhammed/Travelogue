@@ -20,9 +20,9 @@ export const SecondaryCard = () => {
                 <span>{item.time}</span>
               </div>
               <div className="icon-array">
-                <DashboardIcons icon="default"></DashboardIcons>
-                <DashboardIcons icon="default"></DashboardIcons>
-                <DashboardIcons icon="default"></DashboardIcons>
+                <DashboardIcons icon="leaf"></DashboardIcons>
+                <DashboardIcons icon="map"></DashboardIcons>
+                <DashboardIcons icon="sent"></DashboardIcons>
               </div>
             </div>
           </div>

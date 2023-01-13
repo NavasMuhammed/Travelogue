@@ -4,6 +4,7 @@ import "./dashboard.scss"
 import { cardData } from './data'
 import { Routes, Route, Link, Outlet, useLocation } from 'react-router-dom'
 import { SecondaryCard } from '../components/widgets/cardSecond/secondaryCard'
+import CustomDay from '../components/widgets/calandar/datePicker'
 function Dashboard() {
     const currentRoute = useLocation().pathname.split("/");
     return (
@@ -38,8 +39,16 @@ function Dashboard() {
                     })}
                 </div>
                 <div className="bottom-menu-scroll">
-                    {currentRoute[3] == "mostpopular" ? <SecondaryCard/> : <></>}
+                    {currentRoute[3] == "mostpopular" ? <SecondaryCard /> : <></>}
                 </div>
+            </div>
+            <div className="side-menu-container">
+                <div className="calandar-container">
+                    <div className="cal">
+                        <CustomDay/>
+                    </div>
+                </div>
+                <div className="booking-container"></div>
             </div>
         </div >
     )

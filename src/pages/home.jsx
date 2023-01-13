@@ -13,6 +13,7 @@ function HomePage() {
   { console.log(currentRoute1) }
   return (
     <HomeLayout>
+      {currentRoute1 == "/" && <Navigate to="/dashboard/sights" replace={true} />}
       {currentRoute1 == "/dashboard" && <Navigate to="/dashboard/sights" replace={true} />}
       {["Europ", "Sights", "Africa"].map((item, index) => {
         return (

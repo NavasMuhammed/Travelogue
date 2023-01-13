@@ -14,4 +14,9 @@ export const cardData = [
         title: "Trip to india",
         time: "11-05-May",
     },
+    {
+        image: "/images/greece.png",
+        title: "Trip to india",
+        time: "11-05-May",
+    },
 ]

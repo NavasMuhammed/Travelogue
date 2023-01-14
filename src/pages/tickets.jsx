@@ -2,7 +2,7 @@ import React from 'react'
 
 function Tickets() {
     return (
-        <div>Tickets Page</div>
+        <div className="dummy-title">Tickets Page</div>
     )
 }
 

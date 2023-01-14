@@ -2,7 +2,7 @@ import React from 'react'
 
 function Favorite() {
     return (
-        <div>Favorites page</div>
+        <div className="dummy-title">Favorites page</div>
     )
 }
 

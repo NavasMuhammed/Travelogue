@@ -58,8 +58,9 @@
         }
 
         .card-box {
-            width: 99%;
+            width: max-content;
             display: flex;
+            overflow-x: auto;
 
         }
     }
@@ -89,20 +90,22 @@
 
         .bottom-menu-scroll {
             width: 80%;
-            height: 150px;
+            height: max-content;
             display: flex;
             flex-direction: row;
+            overflow-x: auto;
             // background-color: #fff;
         }
     }
 
     .side-menu-container {
-        width: 23%;
+        width: 22%;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 110px;
         right: 0px;
         background-color: #141527;
+        overflow-y: auto;
         .calandar-container {
             .cal {
                 contain: content;
@@ -111,7 +114,7 @@
                 justify-content: center;
                 width: 100%;
                 height: 100%;
-                margin-top: 30px;
+                margin-top: 10px;
 
                 .css-epd502 {
                     width: 300px;
@@ -189,6 +192,45 @@
                     width: 200px;
                     min-width: 300px;
                 }
+            }
+        }
+
+        .booking-container {
+            width: 100%;
+
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 40px;
+                gap: 12.5px;
+
+                .main-title {
+                    display: flex;
+                    justify-content: space-between;
+
+                    :nth-child(1) {
+                        font-size: x-large;
+                        font-weight: bolder;
+                    }
+
+                    :nth-child(2) {
+                        font-size: small;
+                        font-weight: normal;
+                        color: #FC6746;
+                    }
+                }
+
+                .sub-title {
+                    font-size: small;
+                    font-weight: 500;
+                }
+            }
+
+            .small-card-container {
+                display: flex;
+                padding-left: 35px;
+                gap: 20px;
+                flex-direction: column;
             }
         }
     }

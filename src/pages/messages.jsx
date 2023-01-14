@@ -2,7 +2,7 @@ import React from 'react'
 
 function Messages() {
   return (
-    <div>Messages Page</div>
+    <div className="dummy-title">Messages Page</div>
   )
 }
 

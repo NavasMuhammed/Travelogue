@@ -14,7 +14,7 @@ function TopBar() {
         <Notifications badge={false} />
         <div className="user">
           <img src={user} alt="" />
-          <span>Beeku</span>
+          <span>Alison</span>
         </div>
         <div className="arrow">
           <DashboardIcons icon="downArrow" selected={false}></DashboardIcons>

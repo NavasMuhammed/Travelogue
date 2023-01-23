@@ -7,7 +7,24 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { StaticDatePicker } from '@mui/x-date-pickers/StaticDatePicker';
 import { PickersDay } from '@mui/x-date-pickers/PickersDay';
+import { createTheme } from '@mui/material/styles';
 
+const theme = createTheme({
+    palette: {
+        primary: {
+            light: '#757ce8',
+            main: '#3f50b5',
+            dark: '#002884',
+            contrastText: '#fff',
+        },
+        secondary: {
+            light: '#ff7961',
+            main: '#f44336',
+            dark: '#ba000d',
+            contrastText: '#000',
+        },
+    },
+});
 dayjs.extend(isBetweenPlugin);
 
 const CustomPickersDay = styled(PickersDay, {
@@ -16,8 +33,8 @@ const CustomPickersDay = styled(PickersDay, {
 })(({ theme, dayIsBetween, isFirstDay, isLastDay }) => ({
     ...(dayIsBetween && {
         borderRadius: 0,
-        backgroundColor: theme.palette.primary.main,
-        color: theme.palette.common.white,
+        backgroundColor: theme.palette.primary.dark,
+        color: theme.palette.common.black,
         '&:hover, &:focus': {
             backgroundColor: theme.palette.primary.dark,
         },
@@ -33,7 +50,7 @@ const CustomPickersDay = styled(PickersDay, {
 }));
 
 export default function CustomDay() {
-    const [value, setValue] = React.useState(dayjs('2022-04-07'));
+    const [value, setValue] = React.useState(dayjs('2023-01-23'));
 
     const renderWeekPickerDay = (date, selectedDates, pickersDayProps) => {
         if (!value) {
@@ -54,6 +71,7 @@ export default function CustomDay() {
                 dayIsBetween={dayIsBetween}
                 isFirstDay={isFirstDay}
                 isLastDay={isLastDay}
+
             />
         );
     };

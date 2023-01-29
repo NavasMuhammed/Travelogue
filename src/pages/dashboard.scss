@@ -118,83 +118,85 @@
                 height: 84%;
                 margin-top: 10px;
                 border-radius: 32px;
-                filter: opacity(0.18);
-                // .css-epd502 {
-                //     width: 300px !important;
-                // }
+                // filter: opacity(0.18);
+                .css-epd502 {
+                    width: 300px !important;
+                }
+                .css-10fao8b-MuiPickersCalendarHeader-labelContainer {
+                    font-family: 'Poppins' !important;
+                    font-weight: normal !important;
+                }
+                
+                .css-nk89i7-MuiPickersCalendarHeader-root {
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+                
+                .css-169iwlq-MuiCalendarPicker-root {
+                    width: 269px !important;
+                }
+                
+                .css-qklzlb-MuiDayPicker-header {
+                    border-top: .1px solid #646577 !important;
+                }
+                
+                .css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
+                    color: #fff !important;
+                    display: none !important;
+                }
+                
+                .css-1ae9t7h-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+                    color: #646577 !important;
+                }
+                
+                .css-jro82b-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+                    color: #646577 !important;
+                }
 
-                // .css-10fao8b-MuiPickersCalendarHeader-labelContainer {
-                //     font-family: 'Poppins' !important;
-                //     font-weight: normal !important;
-                // }
-
-                // .css-nk89i7-MuiPickersCalendarHeader-root {
-                //     padding-left: 0px !important;
-                //     padding-right: 0px !important;
-                // }
-
-                // .css-169iwlq-MuiCalendarPicker-root {
-                //     width: 269px !important;
-                // }
-
-                // .css-qklzlb-MuiDayPicker-header {
-                //     border-top: .1px solid #646577 !important;
-                // }
-
-                // .css-12mkn7b-MuiButtonBase-root-MuiIconButton-root-MuiPickersCalendarHeader-switchViewButton {
-                //     color: #fff !important;
-                //     display: none !important;
-                // }
-
-                // .css-1ae9t7h-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
-                //     color: #646577 !important;
-                // }
-
-                // .css-jro82b-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
-                //     color: #646577 !important;
-                // }
-
-                // .css-ghi3gg-MuiDayPicker-weekContainer {
-                //     margin: 7.5px 0 !important;
-                // }
-
-                // .css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel {
-                //     margin: 0 0 !important;
-                // }
-
-                // .css-1vcokmn-MuiCalendarOrClockPicker-root {
-                //     background-color: #1E1F3B !important;
-                //     width: 300px !important;
-                //     height: 345px !important;
-                // }
-
-                // .css-es6xc3-MuiButtonBase-root-MuiPickersDay-root {
-                //     background-color: #FC6746 !important;
-                // }
-
-                // .css-wc95jc-MuiButtonBase-root-MuiPickersDay-root {
-                //     background-color: #FC6746 !important;
-                // }
-
-                // .css-ew58n9-MuiButtonBase-root-MuiPickersDay-root {
-                //     background-color: #FC6746 !important;
-                // }
-
-                // .css-15i50ny-MuiButtonBase-root-MuiPickersDay-root {
-                //     background-color: rgba(255, 255, 255, 0) !important;
-                //     color: #fff !important;
-                // }
-
-                // .css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel {
-                //     color: #fff !important;
-                // }
-
-                // .css-xelq0e-MuiPickerStaticWrapper-content {
-                //     background-color: #1E1F3B !important;
-                //     border-radius: 30px !important;
-                //     width: 200px !important;
-                //     min-width: 300px !important;
-                // }
+                .css-ghi3gg-MuiDayPicker-weekContainer {
+                    margin: 7.5px 0 !important;
+                }
+                
+                .css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel {
+                    margin: 0 0 !important;
+                }
+                
+                .css-1vcokmn-MuiCalendarOrClockPicker-root {
+                    // background-color: #1E1F3B !important;
+                    width: 300px !important;
+                    height: 345px !important;
+                }
+                
+                .css-es6xc3-MuiButtonBase-root-MuiPickersDay-root {
+                    background-color: #FC6746 !important;
+                }
+                
+                .css-wc95jc-MuiButtonBase-root-MuiPickersDay-root {
+                    background-color: #FC6746 !important;
+                }
+                
+                .css-ew58n9-MuiButtonBase-root-MuiPickersDay-root {
+                    background-color: #FC6746 !important;
+                }
+                
+                .css-15i50ny-MuiButtonBase-root-MuiPickersDay-root {
+                    background-color: rgba(255, 255, 255, 0) !important;
+                    color: #fff !important;
+                }
+                
+                .css-raiqh1-MuiTypography-root-MuiDayPicker-weekDayLabel {
+                    color: #fff !important;
+                }
+                
+                .MuiPickerStaticWrapper-content.css-4l7j15{
+                    background-color: #1E1F3B;
+                }
+                .MuiPickerStaticWrapper-content {
+                    background-color: #1E1F3B !important;
+                    border-radius: 30px !important;
+                    width: 200px !important;
+                    min-width: 300px !important;
+                }
             }
         }
 
